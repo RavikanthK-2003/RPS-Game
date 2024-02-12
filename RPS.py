@@ -6,13 +6,13 @@ cPoints = 0
 pPoints = 0
  
 def player():
-   
+
   '''This function is used to get players choice.'''
-   
+    
   global choices #declaring the variable choices to be global
   symbol = input("Choose either rock(r), paper(p), or scissors(s). ").lower()
-   
-   
+    
+    
   if symbol not in choices:
     print("You did not enter a valid option. ")
     return player() #using recursion to get a valid input
@@ -51,7 +51,7 @@ while True: #creating an infinite loop
     game() #calling the game for every single round
   print("Good job!\nYour score is:", pPoints, "\nMy score is", cPoints) #displaying the result after 5 rounds
   print()
-  again = int(input("Press 1 to continue\nPress2 to reset and continue\npress 3 to exit "))
+  again = int(input("Press 1 to continue\nPress 2 to reset and continue\npress 3 to exit "))
   if again==1: #this is executed if the user wants to play another 5 rounds
     continue
   elif again==2: #this is executed if the user wants to reset the scores and play another 5 rounds
